@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:drawable="@drawable/arrows_black">
+
+    <target
+        android:name="left_arrow"
+        android:animation="@animator/arrow" />
+    <target
+        android:name="right_arrow"
+        android:animation="@animator/arrow" />
+</animated-vector>

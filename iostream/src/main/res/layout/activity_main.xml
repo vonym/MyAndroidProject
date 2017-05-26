@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.iostream.MainActivity">
+
+    <EditText
+        android:id="@+id/main_et_writedata"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入数据" />
+
+    <Button
+        android:id="@+id/main_btn_write"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="write"
+        android:text="写入" />
+
+    <EditText
+        android:id="@+id/main_et_readdata"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入" />
+
+    <Button
+        android:id="@+id/main_btn_read"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="read"
+        android:text="读取" />
+</LinearLayout>

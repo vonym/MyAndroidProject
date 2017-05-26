@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.intent">
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.intent.SecondActivity"
+            android:label="@string/title_activity_second" >
+            <intent-filter>
+                <action android:name="hd2014" />
+                <action android:name="briuphaha" />
+                <!-- 就算不用category这个属性，那也要有一个默认的 -->
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.intent.ThirdActivity"
+            android:label="@string/title_activity_third" >
+            <intent-filter>
+                <action android:name="da" />
+
+                <!-- 就算不用category这个属性，那也要有一个默认的 -->
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="yongli"/>
+                <category android:name="memeda"/>
+                <!-- briup://192.168.1.1:8888/thirdActivity -->
+                <data
+                    android:mimeType="abc/def"
+                    android:scheme="briup"
+                    android:host="192.168.1.1"
+                    android:port="8888"
+                    android:path="/thirdActivity"/>
+
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

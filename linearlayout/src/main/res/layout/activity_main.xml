@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.linearlayout.MainActivity">
+    <!--orientation: 设置线性布局的排列方式，是linearlayout的私有属性-->
+
+    <!--layout_weigth: 权重，属性值就是一个数字。[重点]：按照屏幕剩余空间所占比例。
+    ScreenWidth:屏幕宽度————sw
+    RestScreenWidth：剩余屏幕宽度————rsw
+    假设两个控件1，2水平排列,比例1:1999
+    （1）wrap_content
+    rsw=sw-2×wrap_content
+    1所占空间：wrap_content+rsw×1/2000
+    2所占空间：wrap_content+rsw×1999/2000
+    （2）match_parent
+    rsw=sw-2*match_parent=-sw=-match_parent
+    1所占空间：match_parent-sw×1/2000
+    2所占空间：match_parent-sw×1999/2000
+    所以结论如下：
+    如果控价是wrap_content，权重越大，占据的空间越大，但再小也不过wrap_content。
+    如果控件是match_parent，权重越大，占据的空间越小，但再大也就match_parent。-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Hello World!"
+        tools:ignore="RtlHardcoded" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#ff0"
+            android:text="Hello World!1111"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:background="#0ff"
+            android:text="Hello World!2222"
+            tools:ignore="HardcodedText" />
+    </LinearLayout>
+
+</LinearLayout>

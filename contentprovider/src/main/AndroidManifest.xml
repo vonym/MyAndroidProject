@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.contentprovider">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!--name:组件名,包名+类名
+        authorities：唯一标识一个provider，类似于网站域名
+        exported：如果该值为true，表示其他程序可以访问该provider
+        -->
+        <provider
+            android:name="com.briup.provider.FirstProvider"
+            android:authorities="www.briup.com"
+            android:exported="true" />
+    </application>
+
+</manifest>

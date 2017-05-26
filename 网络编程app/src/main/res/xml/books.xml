@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<books>
+    <book id="1">
+        <name>安徒生童话</name>
+        <author>安徒生</author>
+        <year>1900</year>
+    </book>
+    <book id="2">
+        <name>冰与火之歌</name>
+        <author>乔治马丁</author>
+        <year>2000</year>
+    </book>
+    <book>
+        <name>Android疯狂讲义</name>
+        <author>李刚</author>
+        <year>2013</year>
+    </book>
+</books>

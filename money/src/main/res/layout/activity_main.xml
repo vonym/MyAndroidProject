@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.briup.activity.MainActivity">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/main_vp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="63dp"
+        android:background="#000" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="3dp"
+        android:orientation="horizontal"
+        android:paddingTop="3dp">
+
+        <LinearLayout
+            android:id="@+id/main_ll_account"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/main_iv_account"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginBottom="3dp"
+                android:src="@drawable/tab_accounte2" />
+
+            <TextView
+                android:id="@+id/main_tv_account"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="记账" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/main_ll_form"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/main_iv_form"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginBottom="3dp"
+                android:src="@drawable/tab_form2" />
+
+            <TextView
+                android:id="@+id/main_tv_form"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="报表" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/main_ll_founds"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/main_iv_founds"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginBottom="3dp"
+                android:src="@drawable/tab_founds2" />
+
+            <TextView
+                android:id="@+id/main_tv_founds"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="资金" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/main_ll_mine"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/main_iv_mine"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginBottom="3dp"
+                android:src="@drawable/tab_mine2" />
+
+            <TextView
+                android:id="@+id/main_tv_mine"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="更多" />
+        </LinearLayout>
+
+    </LinearLayout>
+    <!--<RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="19sp"
+            android:button="@null"
+            android:drawableTop="@drawable/tab_accounte2"
+            android:gravity="center"
+            android:text="记账" />
+
+        <RadioButton
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/tab_form2"
+            android:gravity="center"
+            android:text="报表" />
+
+        <RadioButton
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/tab_founds2"
+            android:gravity="center"
+            android:text="资金" />
+
+        <RadioButton
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/tab_mine2"
+            android:gravity="center"
+            android:text="更多" />
+    </RadioGroup>-->
+</RelativeLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp">
+
+    <TextView
+        android:id="@+id/account_lv_item_tv_left"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:gravity="bottom"
+        android:text="10日"
+        android:textSize="18sp" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:background="@color/colorGray" />
+
+    <ImageView
+        android:id="@+id/account_lv_item_iv"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/account_pen_style"
+        android:padding="5dp"
+        android:src="@drawable/bt_food" />
+
+    <TextView
+        android:id="@+id/account_lv_item_tv_right"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:gravity="bottom"
+        android:text="20.0"
+        android:textSize="18sp" />
+</RelativeLayout>

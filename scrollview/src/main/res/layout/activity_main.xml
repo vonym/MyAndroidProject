@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.scrollview.MainActivity">
+
+    <!--ScrollView里面只能包裹一个控件-->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Hello World!"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Hello World!"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Hello World!"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Hello World!"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </ScrollView>
+
+    <HorizontalScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="100dp" />
+
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="100dp" />
+
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="100dp" />
+
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="100dp" />
+
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="100dp" />
+
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="100dp" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+</LinearLayout>

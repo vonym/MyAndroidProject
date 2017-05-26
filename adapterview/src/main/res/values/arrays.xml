@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="heros">
+        <item>盖伦</item>
+        <item>赵信</item>
+        <item>皇子</item>
+    </string-array>
+</resources>

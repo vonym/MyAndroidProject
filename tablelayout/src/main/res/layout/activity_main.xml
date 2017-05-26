@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:shrinkColumns="1"
+    tools:context="com.example.tablelayout.MainActivity">
+    <!--FrameLayout：一般来说，不当作布局使用，而是当作容器，起一个占位作用-->
+    <!--collapseColumns：隐藏tablelayout的列，从0 开始-->
+    <!--stretchColumns：指定tablelayout可伸展列-->
+    <!--shrinkColumns：指定tablelayout可收缩列，只有屏幕放不下时才有效果-->
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0" />
+    <!--表格布局里面的每一行-->
+
+    <TableRow>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_span="2"
+            android:text="1" />
+        <!--layout_column：设定控件所在的列-->
+        <!--layout_span：设定控件所跨越的列-->
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3333" />
+    </TableRow>
+
+    <TableRow>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="333" />
+    </TableRow>
+</TableLayout>
